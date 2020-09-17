@@ -1,5 +1,9 @@
 #pragma once
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include <stdint.h>
 #include <stdbool.h>
 #include <stdio.h>
@@ -10,6 +14,17 @@
 #include <math.h>
 #include "sdkconfig.h"
 #include "esp_system.h"
+#include <stdint.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdarg.h>
+#include <inttypes.h>
+#include <string.h>
+#include <math.h>
+#include "sdkconfig.h"
+#include "esp_timer.h"
+#include "freertos/FreeRTOS.h"
 
 #ifndef F_CPU
 #define F_CPU (CONFIG_ESP32_DEFAULT_CPU_FREQ_MHZ * 1000000U)
@@ -34,3 +49,7 @@ unsigned long micros();
 unsigned long millis();
 void delay(uint32_t);
 void delayMicroseconds(uint32_t us);
+
+#ifdef __cplusplus
+}
+#endif

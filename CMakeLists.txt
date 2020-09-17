@@ -1,1 +1,1 @@
-idf_component_register(SRCS "shim.c" INCLUDE_DIRS ".")
+idf_component_register(SRCS "shim.c" INCLUDE_DIRS "." REQUIRES esp_common freertos)
