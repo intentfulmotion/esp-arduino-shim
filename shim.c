@@ -1,5 +1,9 @@
 #include "shim.h"
 
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "esp_timer.h"
+
 unsigned long IRAM_ATTR micros()
 {
     return (unsigned long) (esp_timer_get_time());

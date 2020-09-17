@@ -23,8 +23,6 @@ extern "C" {
 #include <string.h>
 #include <math.h>
 #include "sdkconfig.h"
-#include "esp_timer.h"
-#include "freertos/FreeRTOS.h"
 
 #ifndef F_CPU
 #define F_CPU (CONFIG_ESP32_DEFAULT_CPU_FREQ_MHZ * 1000000U)
